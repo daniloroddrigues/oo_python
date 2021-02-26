@@ -3,17 +3,17 @@ class Conta:
     Classe para criação de contas bancárias
     """
 
-    def __init__(self, numero, titular, saldo, limite):
+    def __init__(self, numero, cliente, saldo, limite):
         """
         Método construtor python
 
         :param numero:
-        :param titular:
+        :param cliente:
         :param saldo:
         :param limite:
         """
         self.numero = numero
-        self.titular = titular
+        self.titular = cliente
         self.saldo = saldo
         self.limite = limite
 
