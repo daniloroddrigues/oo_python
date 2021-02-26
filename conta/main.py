@@ -23,3 +23,13 @@ if __name__ == '__main__':
         print("Consegue sacar")
     else:
         print("Não pode sacar")
+
+    c2 = Conta('4321-5', 'Alessandro Vilas Boas', 150, 1000)
+    print('Numero: ', c2.numero)
+    print('Nome: ', c2.titular)
+    print('Saldo: ', c2.saldo)
+    print('Limite: ', c2.limite)
+
+    c1.transfere(c2, 100)
+
+    print('C2 Saldo: ', c2.saldo)
