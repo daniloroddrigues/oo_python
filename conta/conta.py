@@ -55,5 +55,9 @@ class Conta:
         :param valor:
         :return:
         """
-        self.saldo -= valor
-        destino.saldo += valor
+        retirou = self.saca(valor)
+
+        if retirou:
+            destino.saldo += valor
+
+        return retirou

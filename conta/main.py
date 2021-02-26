@@ -31,5 +31,7 @@ if __name__ == '__main__':
     print('Limite: ', c2.limite)
 
     c1.transfere(c2, 100)
+    c1.transfere(c2, 200)
 
+    print(c1.transfere(c2, 200))
     print('C2 Saldo: ', c2.saldo)
