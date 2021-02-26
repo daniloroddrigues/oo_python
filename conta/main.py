@@ -6,3 +6,13 @@ if __name__ == '__main__':
     print('Nome: ', c1.titular)
     print('Saldo: ', c1.saldo)
     print('Limite: ', c1.limite)
+
+    c1.deposita(200)
+
+    print("Saldo: ", c1.saldo)
+
+    c1.saca(100)
+
+    print("Saldo: ", c1.saldo)
+
+    print(c1.extrato())
