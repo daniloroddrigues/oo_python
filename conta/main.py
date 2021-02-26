@@ -16,3 +16,10 @@ if __name__ == '__main__':
     print("Saldo: ", c1.saldo)
 
     print(c1.extrato())
+
+    consegue = c1.saca(4000)
+
+    if consegue:
+        print("Consegue sacar")
+    else:
+        print("Não pode sacar")

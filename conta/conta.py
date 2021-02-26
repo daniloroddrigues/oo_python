@@ -33,7 +33,11 @@ class Conta:
         :param valor:
         :return:
         """
-        self.saldo -= valor
+        if self.saldo >= valor:
+            self.saldo -= valor
+            return True
+
+        return False
 
     def extrato(self):
         """
@@ -42,3 +46,14 @@ class Conta:
         :return:
         """
         return f"------------------------------------\nnumero: {self.numero}\nsaldo: {self.saldo}"
+
+    def transfere(self, destino, valor):
+        """
+        Método para transferência para outra conta
+
+        :param destino:
+        :param valor:
+        :return:
+        """
+        self.saldo -= valor
+        destino.saldo += valor
